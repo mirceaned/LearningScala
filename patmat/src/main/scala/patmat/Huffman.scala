@@ -122,8 +122,6 @@ object Huffman {
     case y :: ys => insert(y, makeOrderedList(ys))
   }
 
-
-
   def insert(x: (Char, Int), xs: List[(Char, Int)]): List[(Char, Int)] = xs match {
 
     case List() => List(x)
@@ -252,7 +250,6 @@ object Huffman {
       decode(frenchCode, secret)
     }
   
-
   // Part 4a: Encoding using Huffman tree
 
   /**
